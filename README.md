@@ -1,64 +1,56 @@
-# Sentiment-Aware Customer Support Chatbot
+# 🎯 Internship Task #1 — Sentiment-Aware Customer Support Chatbot
 
-A smart customer support chatbot that can detect the emotional tone of user messages (Positive, Negative, or Neutral) and respond in a more human and appropriate way.
+## 📌 Project Overview
 
-This project was developed as part of an internship to integrate **Sentiment Analysis** into a customer support chatbot.
+This project is **Internship Task #1** completed as an extension of the **Real-Time Gen-AI Customer Support Chatbot** developed during the Elevance Skills training program.
 
----
+The objective of this internship task is to integrate **sentiment analysis** into a customer-support chatbot so that the system can understand the sentiment expressed in customer messages and respond appropriately.
 
-## Project Description
+Customer-support conversations are not always neutral. Users may express satisfaction, frustration, anger, appreciation, or simply ask factual questions. A chatbot that understands the sentiment of a message can provide responses that are more appropriate to the customer's situation.
 
-Traditional chatbots reply with fixed responses and do not understand how the customer is feeling.  
-This project solves that problem by adding **Sentiment Analysis**.
+This implementation classifies customer messages into three sentiment categories:
 
-The chatbot analyzes every user message using **VADER (Valence Aware Dictionary and sEntiment Reasoner)** and then generates a suitable reply based on the detected emotion.
+- 😊 Positive
+- 😐 Neutral
+- 😞 Negative
 
-### Key Capabilities:
-- Detects Positive, Negative, and Neutral sentiments
-- Gives empathetic replies when the user is angry or frustrated
-- Gives friendly replies when the user is happy
-- Handles common customer support queries such as:
-  - Order tracking
-  - Refund requests
-  - Product complaints
-  - General help
+The detected sentiment is then used to influence the chatbot's response.
 
 ---
 
-## Features
+# 🔗 Connection to the Training Project
 
-- Real-time sentiment detection
-- Emotion-aware response generation
-- Simple console-based chatbot interface
-- Evaluation on a real-world dataset
-- Easy to run and understand
+### Original Training Project
 
----
+**Real-Time Gen-AI Customer Support Chatbot**
 
-## Dataset Used
+The training project focused on developing a chatbot capable of interacting with users in a customer-support environment using Generative AI.
 
-**Twitter US Airline Sentiment Dataset** (from Kaggle)
+### Internship Extension
 
-- Total tweets: **14,640**
-- Sentiment labels: Positive, Negative, Neutral
-- Source: [Kaggle - Twitter US Airline Sentiment](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)
+**Task #1 — Sentiment Analysis**
 
-This dataset contains real customer tweets about airlines. It was used to evaluate how accurately the sentiment analysis model works.
+This internship task builds on the same customer-support chatbot concept by introducing a sentiment-analysis component.
 
-### Evaluation Result:
-- Overall Accuracy: **≈ 65%**
+The extension allows the chatbot to identify the emotional direction of a customer's message and adapt its response accordingly.
 
----
-
-## Technologies Used
-
-| Technology       | Purpose                              |
-|------------------|--------------------------------------|
-| Python           | Main programming language            |
-| NLTK (VADER)     | Sentiment Analysis                   |
-| Pandas           | Dataset handling                     |
-| Scikit-learn     | Accuracy calculation & evaluation    |
-
----
-
-## Project Structure
+```text
+                    TRAINING PROJECT
+                          │
+                          ▼
+          Real-Time Gen-AI Customer Support
+                    Chatbot
+                          │
+                          ▼
+                  INTERNSHIP TASK #1
+                          │
+                          ▼
+                 Sentiment Analysis
+                          │
+              ┌───────────┼───────────┐
+              ▼           ▼           ▼
+           Positive    Neutral     Negative
+              │           │           │
+              └───────────┼───────────┘
+                          ▼
+                Appropriate Response
